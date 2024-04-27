@@ -1,23 +1,37 @@
 import logo from './logo.svg';
-import './App.css';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
-function App() {
-  return (
+import './App.css';
+// import sand from './sand.png';
+// import pyramid from './pyramids.png';
+//import sky from './sky.png';
+import bg from './images/theBg.png';
+
+function App() 
+{
+  return 
+  (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+
+      <Parallax pages={5} >
+
+        <ParallaxLayer className='backGround'
+          speed={0.2}
+          factor={2}
+          style={{
+            backgroundImage: `url(${bg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          <h1>BLUES</h1>
+        </ParallaxLayer>
+
+         
+
+      </Parallax>
+
+      FW REACT
     </div>
   );
 }
