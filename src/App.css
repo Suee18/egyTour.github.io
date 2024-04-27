@@ -1,38 +1,104 @@
-/* .App {
-  text-align: center;
+@font-face
+ {
+  font-family: 'egyTitles';
+  src: url('./fonts/egyptian_font_titles/EgyptianNights-yAOV.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face
+ {
+  font-family: 'egyParagraphs';
+  src: url('./fonts/monainn-font/MonainnRegular-RpWKo.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face
+ {
+  font-family: 'egyParagraphsCHOICE2';
+  src: url('./fonts/grotley-font/GrotleyRegular-mLEWv.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+/* General Styles for the App */
+.theBigContainer {
+  width: 100%;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Styling for each scene div */
+.pyramidsScreenDiv, .secondScreenDiv 
+{
+  width: 100%;
+  height: 100vh; /* Adjust height as necessary, or make it dynamic based on content */
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Title and paragraph styling */
+.sceneTitle {
+  font-size: 7rem;
+  /* color: #fff; White color for the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+  /* margin: 20px; */
+
+  font-family: egyTitles;
+  /* font-size: 500%; */
+ color: rgb(8, 17, 73);
+ margin: 0; 
+  width: 100%;
+  margin-left: 30%;
+}
+
+.infoArticle {
+  padding: 20px;
+  background-color: rgba(249, 249, 249, 0.347); /* Semi-transparent background */
+  border-radius: 8px;
+  margin: 20px;
+  width: 80%; /* Set a width relative to the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box-shadow for a lifted paper effect */
+}
+
+.sceneParagraphInformation {
+  font-family: egyParagraphs;
+  /* background-color: rgba(192, 187, 187, 0.356); Black color with 50% opacity */
+  font-size: 2rem;
+  color: #333; /* Dark gray color for the text */
+}
+
+/* Styling for parallax layers that need specific alignment or centering */
+.parallax-layer-center {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* Responsive styling - ensure that the parallax effect and elements adjust well on different devices */
+@media (max-width: 768px) {
+  .sceneTitle {
+    font-size: 1.5rem;
+  }
+
+  .infoArticle {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .sceneParagraphInformation {
+    font-size: 0.8rem;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+
+
+
+
+
+
+
+
+
+
+
