@@ -1,21 +1,21 @@
 @font-face
  {
   font-family: 'egyTitles';
-  src: url('./fonts/egyptian_font_titles/EgyptianNights-yAOV.ttf') format('truetype');
+  src: url('../fonts/egyptian_font_titles/EgyptianNights-yAOV.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 @font-face
  {
   font-family: 'egyParagraphs';
-  src: url('./fonts/monainn-font/MonainnRegular-RpWKo.otf') format('opentype');
+  src: url('../fonts/monainn-font/MonainnRegular-RpWKo.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
 @font-face
  {
   font-family: 'egyParagraphsCHOICE2';
-  src: url('./fonts/grotley-font/GrotleyRegular-mLEWv.otf') format('opentype');
+  src: url('../fonts/grotley-font/GrotleyRegular-mLEWv.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }

@@ -2,14 +2,17 @@
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
+
+
 //imports of files 
-import './App.css';
+import './egypt_slides';
+import './egypt_slides_styling.css';
 
 //imports of media 
-import bg from './images/theBg.png';
-import pyramids from './images/pyramids.png';
-import sand from './images/camlesCutOut.png';
-import camles from './images/camles.png';
+import bg from '../images/theBg.png';
+import pyramids from '../images/pyramids.png';
+import sand from '../images/camlesCutOut.png';
+import camles from '../images/camles.png';
 
 
 function App() {
