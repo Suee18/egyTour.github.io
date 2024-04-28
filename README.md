@@ -3,7 +3,7 @@
 > you can add your comments below instead
 
 
-## A second-level heading
+##   Tasks track
 - [ ] check for all elements for being responsive to devices
 - [ ] styling the guidance popup message 
 - [ ] get layered images for more scenes
