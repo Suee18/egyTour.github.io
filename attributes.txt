@@ -1,0 +1,4 @@
+click icon <a href="https://www.flaticon.com/free-animated-icons/click" title="click animated icons">Click animated icons created by Freepik - Flaticon</a> 
+
+
+(Missing: some elements to be repsonsive;;; div size is adjustable to decide on the final one)

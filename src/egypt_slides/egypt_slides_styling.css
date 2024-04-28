@@ -22,7 +22,6 @@
 
 
 
-
 .theBigContainer {
   width: 100%;
   overflow-x: hidden;
@@ -36,8 +35,16 @@ body {
 .pyramidsScreenDiv, .secondScreenDiv 
 {
   width: 100%;
-  height: 100vh; /* Adjust height as necessary, or make it dynamic based on content */
+  height: 100vh; /* / WINDOW THINGG* Adjust height as necessary, or make it dynamic based on content */ 
   position: relative;  
+ 
+
+}
+.thirdScreenDiv{
+  width: 100%;
+  height: 100vh; 
+  position: relative;  
+  background-color:  rgb(17, 27, 58);
 
 }
 
@@ -103,7 +110,7 @@ navigation dots
  .navigationDots {
   position: fixed;
   top: 50%;
-  right: 10px;
+  right: 5rem;   /*here ******************************/
   transform: translateY(-100%);
   z-index: 100;
 }
@@ -121,9 +128,8 @@ navigation dots
     align-items: center;
   }
   
-  /* Adjust the size, if needed */
   .dot .fa-icon {
-    font-size: 1rem; /* Example size */
+    font-size: 1rem; 
   }
   
   .planeNavIcon

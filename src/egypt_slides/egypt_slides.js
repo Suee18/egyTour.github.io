@@ -15,10 +15,17 @@ import bg from '../images/theBg.png';
 import pyramids from '../images/pyramids.png';
 import sand from '../images/camlesCutOut.png';
 import camles from '../images/camles.png';
+//external elements
+import GuideMessageLayer from '../landing_guide_message/landing_message';
 
 function App() {
+
+// SEARCH ABOUT:: FILE FORMATTING IN RX NEED TO DIVIDE?
+
   const [activeIndex, setActiveIndex] = useState(0);
-  const divRefs = useRef([createRef(), createRef(), createRef()]); // Creating refs for each div
+  const divRefs = useRef([createRef(), createRef(), createRef()]); // refrencefor each div
+  const [showOverlay, setShowOverlay] = useState(true);
+
 
   const scrollToDiv = (index) => {
     setActiveIndex(index);
@@ -28,10 +35,14 @@ function App() {
     });
   };
 
+
   return (
-    
+
     <div className='theBigContainer'>
-      
+      {showOverlay && (
+        <GuideMessageLayer onGotItClick={() => setShowOverlay(false)} />
+      )}
+
       <div className="navigationDots">
         {divRefs.current.map((_, index) => (
           <span
@@ -106,7 +117,7 @@ function App() {
           </ParallaxLayer>
 
           <ParallaxLayer className='parallaxSceneElement'
-            speed={0.02}
+            speed={0.03}
             offset={0.99}
             style={{
               backgroundImage: `url(${camles})`,
@@ -138,7 +149,7 @@ function App() {
 
 
       <div className="thirdScreenDiv" ref={divRefs.current[2]} id="div3">
-      <label>screen three lhad ma tigi isa</label>
+        <label>screen three lhad ma tigi isa</label>
 
       </div>
     </div>
