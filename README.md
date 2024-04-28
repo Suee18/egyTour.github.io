@@ -1,5 +1,5 @@
 > [!WARNING]
-> **DO not remove/ add any comments in this branch files**
+> **Do NOT remove / add any comments in this branch files**.
 > you can add your comments below instead
 
 
