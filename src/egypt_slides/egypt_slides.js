@@ -1,6 +1,8 @@
 //react imports
-import React from 'react';
+import React, { useState, useRef, createRef } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlane } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -14,13 +16,38 @@ import pyramids from '../images/pyramids.png';
 import sand from '../images/camlesCutOut.png';
 import camles from '../images/camles.png';
 
-
 function App() {
-  return (
+  const [activeIndex, setActiveIndex] = useState(0);
+  const divRefs = useRef([createRef(), createRef(), createRef()]); // Creating refs for each div
 
+  const scrollToDiv = (index) => {
+    setActiveIndex(index);
+    divRefs.current[index].current.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  };
+
+  return (
+    
     <div className='theBigContainer'>
+      
+      <div className="navigationDots">
+        {divRefs.current.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${index === activeIndex ? 'active' : ''}`}
+            onClick={() => scrollToDiv(index)}
+          >
+            {index === activeIndex ? <FontAwesomeIcon icon={faPlane} className="planeNavIcon" /> : ''}
+          </span>
+        ))}
+
+      </div>
+
+
       {/* // pyramids Scene1 div */}
-      <div className="pyramidsScreenDiv">
+      <div className="pyramidsScreenDiv" ref={divRefs.current[0]} id="div1">
 
         <Parallax pages={2}>
 
@@ -36,7 +63,7 @@ function App() {
           </ParallaxLayer>
 
           {/* parallax elements */}
-          <ParallaxLayer speed={0.3} offset={0.3}
+          <ParallaxLayer speed={0.3} offset={0.1}
           //  offset={0.1}> 
           >
             <h1 className="sceneTitle">The pyramids</h1>
@@ -92,14 +119,16 @@ function App() {
 
 
       {/* ****************************scene 2 ***************************************/}
-      <div className="secondScreenDiv">
-        <Parallax pages={2}>
+      <div className="secondScreenDiv" ref={divRefs.current[1]} id="div2">
+        <Parallax
+          pages={2}
+        >
 
           {/* parallax bachground */}
           <ParallaxLayer
             speed={0.1}
             style={{
-              backgroundImage: `url(${bg})`,
+              // backgroundImage: `url(${bg})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}>
@@ -108,8 +137,10 @@ function App() {
       </div>
 
 
+      <div className="thirdScreenDiv" ref={divRefs.current[2]} id="div3">
+      <label>screen three lhad ma tigi isa</label>
 
-
+      </div>
     </div>
 
   );
