@@ -16,7 +16,7 @@ import pyramids from '../images/pyramids.png';
 import sand from '../images/camlesCutOut.png';
 import camles from '../images/camles.png';
 //external elements
-import GuideMessageLayer from '../landing_guide_message/landing_message';
+import GuideMessageLayer from './src/landing_guide_message/landing_message';
 
 function App() {
 
