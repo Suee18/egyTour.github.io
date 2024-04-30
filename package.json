@@ -2,7 +2,7 @@
   "name": "parallex-trial",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Suee18.github.io/tourism__web_live.github.io/egypt_slides/",
+  "homepage": "https://Suee18.github.io/tourism__web_live.github.io/egy_slides_/src",
   "dependencies": {
     "@ap.cx/react-fullpage": "^0.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
