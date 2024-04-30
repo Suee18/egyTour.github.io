@@ -5,7 +5,6 @@ import App from './egypt_slides/egypt_slides';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
 
 root.render(
   <React.StrictMode>
