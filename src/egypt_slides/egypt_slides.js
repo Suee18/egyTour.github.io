@@ -74,8 +74,7 @@ function App() {
           </ParallaxLayer>
 
           {/* parallax elements */}
-          <ParallaxLayer speed={0.3} offset={0.1}
-          //  offset={0.1}> 
+          <ParallaxLayer speed={0.3} offset={0}
           >
             <h1 className="sceneTitle">The pyramids</h1>
           </ParallaxLayer>
