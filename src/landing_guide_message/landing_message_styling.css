@@ -4,31 +4,74 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    width: 100%; 
+
+  }
+  .theAboveAll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
+
+
   }
-  
   .guidanceElements {
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 5px;
     text-align: center;
   }
 
-  .guidanceParagraph
-  {
+  .guidancePara{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
 
-  }
-  .clickGIF
-  {
-    width: 10%;
-    
-  }
   .gotItButton
   {
+  
+      background-color: #815b2b; /* a sandstone-like color */
+      color: #ffffff; /* white text */
+      padding: 10px 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* clean, readable font */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease; 
+      box-shadow: 0 4px #8c7a61; 
+      margin-top: 10%;
+      margin-left: 5%;
+
 
   }
+  .clickGIF{  
+width:10%;
+margin-right: 10%;
+  }
+  .gotItButton:hover 
+  {
+      background-color: #150e55; /* a lighter sandstone color for hover */
+      box-shadow: 0 6px #96a0a3; /* deeper shadow on hover */
+      transform: translateY(-2px); /* subtle lift effect */
   
+  }
+  .GuideVideo{
+border-radius: 5%;
+margin-left: 6%;
+  }
+  .vidG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+  }
