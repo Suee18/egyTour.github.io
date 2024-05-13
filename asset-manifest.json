@@ -1,25 +1,31 @@
 {
   "files": {
-    "main.css": "/egyTour.github.io/static/css/main.89546911.css",
-    "main.js": "/egyTour.github.io/static/js/main.d4a5d03c.js",
+    "main.css": "/egyTour.github.io/static/css/main.65e07260.css",
+    "main.js": "/egyTour.github.io/static/js/main.8bea9d25.js",
     "static/js/453.9b94e480.chunk.js": "/egyTour.github.io/static/js/453.9b94e480.chunk.js",
+    "static/media/PSL2.png": "/egyTour.github.io/static/media/PSL2.99102b47862fe41a9eb4.png",
     "static/media/guideSS_GIF.gif": "/egyTour.github.io/static/media/guideSS_GIF.7d2a7021f265c934d12d.gif",
     "static/media/pyramids.png": "/egyTour.github.io/static/media/pyramids.3dc5b16f18867adcc7c2.png",
+    "static/media/PSL1.png": "/egyTour.github.io/static/media/PSL1.7ac6bc21c00c969dcdf3.png",
     "static/media/camles.png": "/egyTour.github.io/static/media/camles.8b6cfc3b69243dc7de88.png",
     "static/media/camlesCutOut.png": "/egyTour.github.io/static/media/camlesCutOut.1a48ccd759bb28a77dcd.png",
+    "static/media/ABUS3.png": "/egyTour.github.io/static/media/ABUS3.9e0d3ba3260409eb1efe.png",
     "static/media/theBg.png": "/egyTour.github.io/static/media/theBg.188cc3f6d78b919bd978.png",
+    "static/media/ABSU4_undergroundrelicas.png": "/egyTour.github.io/static/media/ABSU4_undergroundrelicas.ba4904698c585d425035.png",
+    "static/media/ABUS1.png": "/egyTour.github.io/static/media/ABUS1.5c091f3553955c812a9a.png",
     "static/media/click.gif": "/egyTour.github.io/static/media/click.f32f801d35732f16d213.gif",
+    "static/media/PSsky.png": "/egyTour.github.io/static/media/PSsky.e633d3ea37f90006b76d.png",
     "static/media/EgyptianNights-yAOV.ttf": "/egyTour.github.io/static/media/EgyptianNights-yAOV.553b1d0624da125c5813.ttf",
     "static/media/guideVideo.mp4": "/egyTour.github.io/static/media/guideVideo.d8b12d3df3ba98ecdb6b.mp4",
     "static/media/GrotleyRegular-mLEWv.otf": "/egyTour.github.io/static/media/GrotleyRegular-mLEWv.9ceacb2f990c274c02d3.otf",
     "static/media/MonainnRegular-RpWKo.otf": "/egyTour.github.io/static/media/MonainnRegular-RpWKo.0ce1060831d76ffd02bc.otf",
     "index.html": "/egyTour.github.io/index.html",
-    "main.89546911.css.map": "/egyTour.github.io/static/css/main.89546911.css.map",
-    "main.d4a5d03c.js.map": "/egyTour.github.io/static/js/main.d4a5d03c.js.map",
+    "main.65e07260.css.map": "/egyTour.github.io/static/css/main.65e07260.css.map",
+    "main.8bea9d25.js.map": "/egyTour.github.io/static/js/main.8bea9d25.js.map",
     "453.9b94e480.chunk.js.map": "/egyTour.github.io/static/js/453.9b94e480.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89546911.css",
-    "static/js/main.d4a5d03c.js"
+    "static/css/main.65e07260.css",
+    "static/js/main.8bea9d25.js"
   ]
 }
