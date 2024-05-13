@@ -15,6 +15,12 @@ import bg from '../images/theBg.png';
 import pyramids from '../images/pyramids.png';
 import sand from '../images/camlesCutOut.png';
 import camles from '../images/camles.png';
+import PSbg from '../images/PSsky.png';
+import portSaidLayer1 from '../images/PSL1.png';
+import portSaidLayer2 from '../images/PSL2.png';
+import AbuSimbelLayer1 from '../images/ABUS1.png';
+import AbuSimbelLayer2 from '../images/ABUS3.png';  
+import AbuSimbelLayer3 from '../images/ABSU4_undergroundrelicas.png';
 //external elements
 import GuideMessageLayer from '../landing_guide_message/landing_message';
 
@@ -128,7 +134,7 @@ function App() {
       </div>      {/* end of scene-- 1-- the pyramids */}
 
 
-      {/* ****************************scene 2 ***************************************/}
+      {/* ****************************PORT SAID***************************************/}
       <div className="secondScreenDiv" ref={divRefs.current[1]} id="div2">
         <Parallax
           pages={2}
@@ -137,21 +143,117 @@ function App() {
           {/* parallax bachground */}
           <ParallaxLayer
             speed={0.1}
+                       factor={2}
+
             style={{
-              // backgroundImage: `url(${bg})`,
+               backgroundImage: `url(${PSbg})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}>
           </ParallaxLayer>
+
+
+          <ParallaxLayer speed={0.3} offset={0}
+          >
+            <h1 className="sceneTitle">Port Said</h1>
+          </ParallaxLayer>
+
+
+          <ParallaxLayer offset={0.3} speed={0.15} className="parallax-layer-center">
+            <article className="infoArticle">
+              <p className="sceneParagraphInformation">
+               
+                att to AN    </p>
+            </article>
+          </ParallaxLayer>
+
+
+          <ParallaxLayer
+            factor={2}
+            offset={0.80}
+            speed={0.4}
+            style={{
+              backgroundImage: `url(${portSaidLayer2})`,
+              backgroundSize: '100% 80%',
+              backgroundPosition: 'center',
+            }}
+          >
+          </ParallaxLayer>
+
         </Parallax>
       </div>
-
+      {/* ****************************Abu Simbel***************************************/}
 
       <div className="thirdScreenDiv" ref={divRefs.current[2]} id="div3">
-        <label>screen three lhad ma tigi isa</label>
+        {/* <label>screen three lhad ma tigi isa</label> */}
+
+
+
+
+        <Parallax
+          pages={2}
+        >
+
+          {/* parallax bachground */}
+          <ParallaxLayer
+            speed={0.2}
+            factor={2}
+
+            style={{
+               backgroundImage: `url(${AbuSimbelLayer1})`,
+               backgroundSize: '100% 100%',
+               backgroundPosition: 'center',
+            }}>
+          </ParallaxLayer>
+
+
+          <ParallaxLayer speed={0.3} offset={0}
+          >
+            <h1 className="sceneTitle">Abu simbel</h1>
+          </ParallaxLayer>
+
+
+          <ParallaxLayer offset={0.3} speed={0.15} className="parallax-layer-center">
+            <article className="infoArticle">
+              <p className="sceneParagraphInformation">
+               
+             Abu simble exotics   </p>
+            </article>
+          </ParallaxLayer>
+
+
+          <ParallaxLayer
+            factor={2}
+            // speed={0.5}
+            speed={0.35}
+            style={{
+              backgroundImage: `url(${AbuSimbelLayer2})`,
+              backgroundSize: '100% 70%',
+              backgroundPosition: 'center',
+            }}
+          >
+          </ParallaxLayer>
+          <ParallaxLayer className='parallaxSceneElement'
+            speed={0.02}
+            offset={1.2}
+            style={{
+              backgroundImage: `url(${AbuSimbelLayer3})`,
+              backgroundSize: '100% 60%',
+              backgroundPosition: 'center',
+            }}>
+          </ParallaxLayer>
+        </Parallax>
 
       </div>
-    </div>
+
+
+
+
+
+
+
+    </div> /* biggest container */
+    
 
   );
 }
