@@ -1,5 +1,5 @@
 ### Egypt virtual tour
-###(still under development)
+### (still under development)
 
 > [!NOTE]
 > This react application main goal is to break the stereotype information about Egypt venues and attractions.
